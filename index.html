@@ -6,7 +6,6 @@
 <title>Tech Stack Swipe File — EEM26</title>
 <meta name="description" content="The exact system EEM26 students used to make ₦200K–₦500K monthly. Get instant access now.">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Figtree:wght@400;600;700;900&display=swap" rel="stylesheet">
-<script type="text/javascript" src="https://payhip.com/payhip.js"></script>
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -646,11 +645,13 @@ const tick = setInterval(() => {
 }, 1000);
 
 // ── AFFILIATE TRACKING ──
-const BASE_URL = "https://payhip.com/EEM26?af=af69de5de681f1e";
+const BASE_URL = "https://payhip.com/b/xeqSM/af69de5de681f1e";
+function getParam(n){ return new URLSearchParams(window.location.search).get(n); }
 function setLinks(){
+  const url = BASE_URL;
   ['hero-dl','final-dl','float-dl','nav-dl','proof-dl'].forEach(id => {
     const el = document.getElementById(id);
-    if(el) el.href = BASE_URL;
+    if(el) el.href = url;
   });
 }
 setLinks();
@@ -667,7 +668,7 @@ document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 document.querySelectorAll('.buy-trigger').forEach(el => {
   el.addEventListener('click', function(e) {
     e.preventDefault();
-    window.open('https://payhip.com/EEM26?af=af69de5de681f1e', '_blank');
+    window.open('https://payhip.com/b/xeqSM/af69de5de681f1e', '_blank');
   });
 });
 </script>
